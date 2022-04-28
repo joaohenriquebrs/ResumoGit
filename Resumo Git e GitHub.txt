@@ -1,0 +1,130 @@
+Link com grande resumo: https://github.com/rafaballerini/GitTutorial
+
+Se tiver entre (), é pra digitar algo sem os parenteses no comando, apenas coloquei para ser um nome geral
+
+
+
+No Git:
+Para abrir a "pasta" pode-se abrir dando cd (pasta) ... 
+ou simplesmente com o botao direito na pasta clicar em Git Bash Here
+
+git --version // verificar a versao
+
+git init // Inicializa um repositorio, se aparecer (master), então é oq esta na branch principal
+
+git add (arquivo) // Manda os arquivos para a área de stage, fica so agurdando para ser empurrado para o "palco"
+
+git status // vê como esta indo os comandos
+
+git commit -m "titulo do commit" // Para commitar 
+
+git branch -M "main" // Renomear a branch master para main
+
+clear // limpar a tela do git
+
+No GitHub:
+Vai em repositorios, depois em new 
+
+Em new: Repository name* nomedapasta
+        Preenche a descrição dependendo do projeto que está fazendo
+	  E cria o repositorio
+
+
+
+No Git:
+
+username é o nome do perfil no GitHub
+o (link) é padronizado, sempre https://github.com/username/nomeRepositorio.git 
+
+git remote add origin (link) // Serve para fazer a conexão do repositorio local com o repositorio do GitHub
+remote é a conexao entre o repositorio local e o do GitHub, add para adcionar, origin é o apelido nome que ta dando para o repositorio do github 
+origin é apenas um apelido, dependendo do projeto pode ser mudado, para qualquer nome
+
+git push -u origin main // Ta empurrando os commits que estao no repositorio local para o GitHub, o repositorio remoto que criamos    
+
+depois disso vai abrir uma aba para fazer o login no GitHub
+e depois ja estara o commit no GitHub
+
+
+
+No VScode adciona um arquivo
+
+Depois abre o Git Bash e digita
+git add . // Serve para adicionar todos os arquivos que foram alterados e criados na área de stage
+
+git commit -m "mensagem"
+
+nao precisa dar git remote novamente, so uma vez para fazer a conexao
+git push origin main
+
+
+
+No GitHub:
+Clicando em mensagem, aparece os arquivos que foram alterados 
+
+
+
+No Git:
+
+Como funciona a branch e como cria-la:
+git checkout -b "nomedanovabranch" // Criando uma nova branch, e com o chckout ja sai da branch que está e entra na nova que esta sendo criada
+
+git checkout main // Volta para a branch principal
+
+
+
+git merge (nomedanovabranch) // Comando na branch main, serve para mesclar as branchs, ta juntando as duas
+
+git push origin main // E agora (nomedanovabranch) estará tambem na branch principal, ja aparece no GitHub 
+
+
+
+No GitHub:
+para clonar o codigo, vai no botao verde Code, copia o link, depois cria uma pasta no pc
+e abre o git bash, já no git...
+
+No Git:
+git clone (link) // pronto ja esta clonado 
+
+
+
+E se fizer alguma alteração no arquivo, mas ja tivermos dado git clone, mas querer a atualização
+vai no git...
+
+No Git:
+cd (nomePasta) // entra na pasta  
+
+git pull // pegou a alteração feita, puxa a alteração feita, pronto codigo atualizado 
+
+
+
+
+Para pegar o codigo de outro e upar no seu GitHub:
+
+Vai em Fork e clica no seu perfil
+
+
+
+Para requisitar pull request:
+
+vai no codigo, altera, deixa a mensagem e faz o commit 
+depois vai em contribute, e clica em open pull request
+
+Você requisita para uma pessoa alterar o codigo, que você clonou dela
+
+
+Para aceitar pull request:
+
+Simplesmente clica em Merge pull request
+
+
+
+
+
+
+
+
+
+
+
+
